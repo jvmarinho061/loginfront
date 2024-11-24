@@ -1,0 +1,100 @@
+.login-container {
+  width: 450px;
+  background: #B1C29E;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.input-field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 45px 0 25px;
+}
+
+.input-field input::placeholder {
+  color: #fff;
+}
+
+.input-field .icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+}
+
+.recall-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.recall-forget label input {
+  accent-color: #fff;
+  margin-right: 5px;
+}
+
+.recall-forget .forgot-password {
+  color: #fff;
+  text-decoration: none;
+}
+
+.recall-forget .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:hover {
+  background: #f0f0f0;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link .create-account {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link .create-account:hover {
+  text-decoration: underline;
+}
