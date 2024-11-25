@@ -1,6 +1,7 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import { useState } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -41,7 +42,7 @@ const Login = () => {
         </div>
         <div className="recall-forget">
           <label>
-            <input type="checkbox" /> Lembrar de mim
+            <input type="checkbox" /> Manter Acesso
           </label>
           <a href="#" onClick={(e) => e.preventDefault()} className="forgot-password">
             Esqueceu a senha
@@ -52,9 +53,10 @@ const Login = () => {
         </button>
       </form>
       <div className="signup-link">
-        <a href="#" className="create-account">
-          Criar Conta
-        </a>
+        <Link to= {'/cadastro'} 
+        className="create-account"> 
+        Criar Conta 
+        </Link>
       </div>
     </div>
   );
