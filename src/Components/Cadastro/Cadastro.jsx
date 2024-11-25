@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { FaPray } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './Cadastro.css'
 
 const Cadastro = () => {
     const [formData, setFormData] = useState({  //gerenciamento de estado do Cadastro de usuários
