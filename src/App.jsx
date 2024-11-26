@@ -3,6 +3,7 @@ import "./App.css";
 import Login from './Components/Login/Login';
 import Cadastro from './Components/Cadastro/Cadastro';
 import Cardapio from "./Components/Cardapio/Cardapio";
+import Adicionar from "./Components/Adicionar/Adicionar";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/comida' element={<Cardapio />} />
+        <Route path='/comida/adicionar' element={<Adicionar />} />
         <Route path='/cadastro' element={<Cadastro />} />
         <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
