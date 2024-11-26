@@ -1,0 +1,89 @@
+.adicionar-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.adicionar-form {
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.adicionar-form h2 {
+    background-color: #B1C29E;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.adicionar-form .inputs input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 2.5% 0;
+    border: 1px solid #849273;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000;
+    transition: border-color 0.3s ease;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+.adicionar-form .inputs input:focus {
+    border-color: #849273;
+    outline: none;
+}
+
+.adicionar-form .estrelas {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 5px;
+}
+
+.adicionar-form .star {
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.adicionar-form .star:hover i {
+    transform: scale(1.2);
+    color: #ffcc00 !important;
+}
+
+#adicionar-form-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #98A18D;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#adicionar-form-btn:hover {
+    background-color: #849273;
+}
+
+@media (max-width: 768px) {
+    .adicionar-form {
+        padding: 15px;
+    }
+
+    .adicionar-form .star {
+        font-size: 25px;
+    }
+}
