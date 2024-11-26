@@ -1,13 +1,43 @@
-h1{
 
-color:white;
+
+.titulo{
+    margin-top: 20px;
+}
+
+body{
+
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.buscar{
+    padding: 14px 80px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius:5px;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: 25px;
+    background-color: #B1C29E;
+    position: relative;
+    bottom: 30px;
+    
+}
+input::placeholder{
+    color:white;
 
 }
 
-.busca{
-
-    display: flex;
-    text-align: center;
-    align-items: center;
+.pesquisa{
+height: 500px;
+margin-top: 20px;
+padding: 30px;
+border-radius: 5px;
+background-color: #B1C29E;
+padding-right: 200px;
+padding-left: 200px;
 
 }
