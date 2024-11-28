@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom'
 import Card from '../Cards/Card.jsx'
 import './Cardapio.css'
+import Adicionar from '../Adicionar/Adicionar.jsx'
 export default function Cardapio() {
 
     return (
@@ -9,7 +10,7 @@ export default function Cardapio() {
         <div>
             <div>
              <div className='botaoNewCad'>
-                <Link to="/Cadastro">
+                <Link to="/Adicionar">
                   
                   <button>Novo Cadastro</button>
                 
