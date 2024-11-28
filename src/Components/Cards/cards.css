@@ -2,24 +2,34 @@ h2{
     font-family: sans-serif;
     color:white;
     padding: 20px;
-    background-color:   rgba(118, 118, 118, 0.433);
+    background-color:  rgba(118, 118, 118, 0.303);
 }
 
 .valor{
     padding: 10px;
     color:white;
-    background-color: rgba(118, 118, 118, 0.433);
+    background-color:rgba(118, 118, 118, 0.303);
 }
 
 .Cartao{
+    width: 200px;
     border: 1px solid rgb(255, 255, 255);
     max-width: 500px;
     height: 350px;
     border-radius: 8px;
     padding: 5px;
-    background-color: rgba(118, 118, 118, 0.433);
+    background-color: rgba(118, 118, 118, 0.303);
     margin: 40px;
-    
+    transition: 2ms;
+    cursor: pointer;
+}   
+
+.Cartao img{
+    border-radius: 5px;
+}
+
+.Cartao:hover{
+    transform: scale(1.1);
 }
 .cartoes{
     display:flex;
@@ -39,7 +49,7 @@ button{
     cursor: pointer;
 }
 .estrela{
-    background-color:rgba(118, 118, 118, 0.433);
+    background-color:rgba(118, 118, 118, 0.303);
 }
 .star{
     background-color: rgba(70, 70, 70, 0);
@@ -70,6 +80,6 @@ button{
 }
 .excluirAndDelete{
     display: flex;
-    background-color:rgba(118, 118, 118, 0.433);
+    background-color:rgba(118, 118, 118, 0.303);
 }
 

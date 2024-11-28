@@ -17,18 +17,17 @@ text-align: center;
     text-align: center;
     margin-top: 10px;
     border-radius:5px;
-    color: white;
     border: 1px solid white;
     outline: none;
+    color: white;
     font-size: 25px;
     background-color: #B1C29E;
     position: relative;
     bottom: 30px;
     
 }
-input::placeholder{
-    color:white;
-
+.buscar::placeholder{
+    color: white;
 }
 
 .pesquisa{
@@ -40,4 +39,17 @@ background-color: #B1C29E;
 padding-right: 200px;
 padding-left: 200px;
 
+}
+
+.botaoNewCad button{
+
+    color: white;
+    background-color: rgba(118, 118, 118, 0.303);;
+    padding: 14px 16px;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+    right: 100px;
+    top: 18px;
+    border: 1px solid white;
 }
