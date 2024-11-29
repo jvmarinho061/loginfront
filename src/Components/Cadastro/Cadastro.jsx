@@ -1,94 +1,138 @@
-import React, {useState} from 'react'
-import { FaPray } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import './Cadastro.css'
+import React, { useState } from 'react';
+import './Cadastro.css';
 
 const Cadastro = () => {
-    const [formData, setFormData] = useState({  //gerenciamento de estado do Cadastro de usuários
-        nome:'',
-        email:'',
-        cpf:'',
-        cep:'',
-        endereco:'',
-        senha:'',
-        confirmarSenha:'',
-    });
-    const handleChange = (e) => {
-        const {name, value} = e.target;
-        setFormData({...formData,[name]:value});
-    };
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    cpf: '',
+    cep: '',
+    endereco: '',
+    senha: '',
+    confirmarSenha: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   return (
-    <div>
-      <h1 className="cadastro-Name">Cadastro</h1>
+    <div className="cadastro-container">
+      <h1 className="cadastro-title">Cadastre-se</h1>
       <form>
-        <div>
-        <label>Nome:</label>
-        <input 
-        type="text"
-        name="nome"
-        value={formData.nome}
-        onChange={handleChange}
-        />
-        </div>
-        <div>
-            <label>E-mail:</label>
+        {/* Nome */}
+        <div className="form-group">
+          <div className="input-container">
             <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
+              type="text"
+              id="nome"
+              name="nome"
+              value={formData.nome}
+              onChange={handleChange}
+              required
             />
+            <label htmlFor="nome">Nome</label>
+          </div>
         </div>
-        <div>
-            <label>Senha</label>
-            <input 
-            type="text"
-            name="senha"
-            value={formData.senha}
-            onChange={handleChange}
-            />
-        </div>
-        <div>
-            <label>Confirmar Senha:</label>
-            <input 
-            type="text"
-            name="confirmarSenha"
-            value={formData.confirmarSenha}
-            onChange={handleChange}
-            />
-        </div>
-        <div>
-            <label>CPF:</label>
-            <input 
-            type="text"
-            name="cpf"
-            value={formData.cpf}
-            onChange={handleChange}
-            />
-        </div>
-        
-        <div>
-            <label>Endereço:</label>
+
+        {/* E-mail */}
+        <div className="form-group">
+          <div className="input-container">
             <input
-            type="text" 
-            name="endereco"
-            value={formData.endereco}
-            onChange={handleChange}
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
             />
+            <label htmlFor="email">E-mail</label>
+          </div>
         </div>
-        <div>
-            <label>CEP:</label>
-            <input 
-            type="text"
-            name="cep"
-            value={formData.cep}
-            onChange={handleChange}
+
+        {/* Senha */}
+        <div className="form-group">
+          <div className="input-container">
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              value={formData.senha}
+              onChange={handleChange}
+              required
             />
+            <label htmlFor="senha">Senha</label>
+          </div>
         </div>
+
+        {/* Confirmar Senha */}
+        <div className="form-group">
+          <div className="input-container">
+            <input
+              type="password"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              value={formData.confirmarSenha}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="confirmarSenha">Confirmar Senha</label>
+          </div>
+        </div>
+
+        {/* CPF */}
+        <div className="form-group">
+          <div className="input-container">
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              value={formData.cpf}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="cpf">CPF</label>
+          </div>
+        </div>
+
+        {/* Endereço */}
+        <div className="form-group">
+          <div className="input-container">
+            <input
+              type="text"
+              id="endereco"
+              name="endereco"
+              value={formData.endereco}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="endereco">Endereço</label>
+          </div>
+        </div>
+
+        {/* CEP */}
+        <div className="form-group">
+          <div className="input-container">
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              value={formData.cep}
+              onChange={handleChange}
+              required
+            />
+            <label htmlFor="cep">CEP</label>
+          </div>
+        </div>
+
+        {/* Botão */}
+        <button type="submit" className="btn-cadastrar">
+          Cadastrar
+        </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
 export default Cadastro;

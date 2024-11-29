@@ -6,6 +6,12 @@
   border-radius: 10px;
   padding: 40px;
   margin: 0 auto;
+
+  /* Centralização no meio da tela */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .login-title {
