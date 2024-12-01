@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Adicionar.css';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Importando o hook useNavigate
 
 export default function Adicionar() {
-
     const [estrelas, setEstrelas] = useState(0);
+    const navigate = useNavigate(); // Usando o hook useNavigate
 
     function updateStars(starIndex) {
         setEstrelas(starIndex);
@@ -30,6 +31,7 @@ export default function Adicionar() {
         function ok(response) {
             console.log('Resposta do servidor:', response);
             alert('Card Cadastrado com Sucesso');
+            navigate('/comida'); // Redireciona para a página de cardápio após persistência bem-sucedida
         }
 
         axios.post(url, dados)
@@ -40,7 +42,6 @@ export default function Adicionar() {
 
         console.log("Dados a serem enviados:", dados);
     }
-
 
     return (
         <div className="adicionar-container">
@@ -60,6 +61,13 @@ export default function Adicionar() {
                 </div>
                 <button id="adicionar-form-btn" type="submit">Cadastrar</button>
             </form>
+            {/* Botão para voltar para a tela de cardápio */}
+            <button 
+                className="voltar-btn" 
+                onClick={() => navigate('/comida')} // Redireciona para a tela de cardápio ao clicar
+            >
+                Voltar para o Cardápio
+            </button>
         </div>
     );
 }
